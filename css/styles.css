@@ -920,19 +920,17 @@ height: 15px;
 border: 2px solid var(--text-color-headers);
 border-radius: 2px;
 
-background-image: url(./images/checkbox.svg);
+background-image: url(../images/checkbox.svg);
 background-repeat: no-repeat;
 background-size: contain;
 }
 
-.input-checkbox:checked + .icon-checkbox
-{
-/* border-color: var(--text-color-accent); */
+.input-checkbox:checked + .icon-checkbox {
 background-color: var(--text-color-accent);
 }
 
 .input-checkbox:focus + .icon-checkbox {
-  border-color: var(--text-color-accent);
+border-color: var(--text-color-accent);
 }
 
 .button-modal-submit {
