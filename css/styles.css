@@ -726,8 +726,8 @@ margin-left: 10px;
 }
 
 .label-subscription {
-  width: 358px;
-  margin-right: 12px;
+width: 358px;
+margin-right: 12px;
 }
 
 .subscription-input {
@@ -790,7 +790,7 @@ margin-bottom: 10px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 
-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 outline: none;
 }
@@ -804,6 +804,15 @@ outline: none;
 .input-name:focus,
 .input-area:focus {
 border-color: var(--text-color-accent);
+}
+
+.email-icon,
+.tel-icon,
+.name-icon {
+position: absolute;
+top: 50%;
+left: 15px;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-name:hover + .name-icon,
@@ -867,22 +876,6 @@ letter-spacing: 0.01em;
 color: var(--text-color-main);
 }
 
-.email-icon,
-.tel-icon,
-.name-icon {
-position: absolute;
-top: 50%;
-left: 15px;
-}
-
-/* .email-icon:hover,
-.tel-icon:hover,
-.name-icon:hover,
-.email-icon:focus,
-.tel-icon:focus,
-.name-icon:focus {
-fill: var(--text-color-accent)
-} */
 
 .text-checkbox,
 .link-checkbox {
@@ -897,11 +890,16 @@ color: var(--text-color-main);
 
 .link-checkbox {
 color: var(--text-color-accent);
+text-decoration: none;
 }
 
-.link-checkbox:hover,
-.link-checkbox:focus {
-  text-decoration: underline;
+.link-checkbox::after {
+content: " ";
+width: 112px;
+height: 1px;
+background-color: var(--text-color-accent);
+display: block;
+margin-left: auto;
 }
 
 .label-checkbox {
