@@ -192,7 +192,7 @@ fill: var(--text-color-accent);
 
 
 
-/* --------------------------------------------------------Hero  */
+/* HERO --------------------------------------------------------------------------------------- */
 .section-hero {
 max-width: 1600px;
 height: 600px;
@@ -366,7 +366,7 @@ background-color: var(--back-ground-color-third);
 margin-bottom: 30px;
 }
 
-.prin-first::before {
+/* .prin-first::before {
 background-image: url(../images/prin-first.svg);
 }
 .prin-second::before {
@@ -377,7 +377,7 @@ background-image: url(../images/prin-third.svg);
 }
 .prin-fourth::before {
 background-image: url(../images/astronaut.svg);
-}
+} */
 
 
 
